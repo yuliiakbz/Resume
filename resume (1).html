@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Frontend Engineer CV - Yulia Bilobran">
+    <title>CV - Yulia Bilobran</title>
+    <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/v2/D4E03AQF2yRkNdkHcrQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699459228760?e=1747267200&v=beta&t=4PA8gfcybOQ1fFHeHJ7HJvCV8moytzRMx0-NRNeKc8Y">
+</head>
+<body>
+    <div class="blue-container"></div>
+    
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+        <span id="theme-label">Light Mode</span>
+    </div>
+
+    <header>
+        <h1>Yulia Bilobran | Frontend Engineer</h1>
+    </header>
+
+    <main role="main">
+        <div style="display: flex; justify-content: space-between; gap: 20px;">
+            <section>
+                <p>
+                    Frontend developer specializing in Vue.js and React.js with TypeScript. Building fast, responsive web applications 
+                    with a strong focus on clean code and exceptional user experience. My QA background gives me a unique advantage 
+                    in delivering well-tested, reliable solutions.
+                </p>
+                <p>
+                    Known for quick problem-solving skills and ability to adapt to new technologies. Strong communicator who effectively 
+                    collaborates with designers and developers to turn complex requirements into elegant solutions. Currently focusing on 
+                    modern frontend architecture and performance optimization.
+                </p>
+            </section>
+
+            <section style="min-width: 270px; width: 100%;">
+                <address>
+                    <p>Email: <a href="mailto:yuliabilobran@gmail.com">yuliabilobran@gmail.com</a></p> 
+                    <p>Phone: <a href="tel:+380976950512">+380976950512</a></p> 
+                    <p>Location: Lviv, Ukraine</p> 
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/yulia-bilobran-a561101a8" target="_blank" rel="noopener noreferrer">linkedin.com/in/yuliabilobran</a></p>
+                </address>
+            </section>
+        </div>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Frontend: React.js, Vue.js, TypeScript, JavaScript, HTML5, CSS3/SCSS</li>
+                <li>UI Libraries: Material-UI, Tailwind CSS</li>
+                <li>State Management: Vuex, Redux</li>
+                <li>Testing: Jest, Cypress, Playwright</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Additional: RESTful APIs, Responsive Design, Web Performance Optimization</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Frontend Engineer, NayaOne</h3>
+                <p><time datetime="2024-04">April 2024</time> - Present</p>
+                <ul>
+                    <li>Develop and maintain web applications using Vue.js and React.js with TypeScript</li>
+                    <li>Build reusable components and implement responsive designs</li>
+                    <li>Integrate and optimize third-party APIs for enhanced functionality</li>
+                    <li>Collaborate with UI/UX designers to implement intuitive user interfaces</li>
+                    <li>Implement automated testing using Cypress and Playwright</li>
+                    <li>Optimize application performance and ensure cross-browser compatibility</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Quality Assurance Engineer → Frontend Developer, NayaOne</h3>
+                <p><time datetime="2022-01">January 2022</time> - <time datetime="2024-03">March 2024</time></p>
+                <ul>
+                    <li>Transitioned from QA to frontend development role</li>
+                    <li>Contributed to frontend feature development using Vue.js</li>
+                    <li>Implemented automated testing strategies using Cypress</li>
+                    <li>Collaborated with the development team on UI/UX improvements</li>
+                    <li>Participated in code reviews and technical documentation</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Quality Assurance Engineer, Pecode</h3>
+                <p><time datetime="2020-01">January 2020</time> - <time datetime="2024-07">July 2024</time></p>
+                <ul>
+                    <li>Specialized in frontend testing and UI automation</li>
+                    <li>Conducted thorough testing of web applications</li>
+                    <li>Collaborated with frontend developers to improve application quality</li>
+                </ul>
+            </article>
+        </section>
+
+        <div style="display: flex; justify-content: space-between; gap: 20px;"> 
+            <section>
+                <h2>Certifications</h2>
+                    <article>
+                        <h3>Basic rules of cyber hygiene</h3>
+                        <p>Lviv Polytechnic National University, 2025</p>
+                    </article>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <article>
+                    <h3>Lviv Polytechnic National University, Lviv</h3>
+                    <p>Bachelor's, Cybersecurity</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (B2+)</li>
+                    <li>Ukrainian (Native)</li>
+                </ul>
+            </section>
+        </div>
+        
+        <section>
+            <h2>References & Comments</h2>
+            <div id="comments-container">
+                <p>Loading comments...</p>
+            </div>
+        </section>
+    </main>
+    
+    <div class="blue-container"></div>
+    
+    <footer>
+        <div id="browser-info"></div>
+    </footer>
+    
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/mblogyab" method="POST">
+                <div class="form-group">
+                    <label for="name">
+                        Your name:
+                        <input type="text" id="name" name="name" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        Your email:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="phone">
+                        Your phone number:
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="message">
+                        Your message:
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </label>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // 1. Store Browser and OS Info in localStorage
+        function storeBrowserInfo() {
+            const browserInfo = {
+                userAgent: navigator.userAgent,
+                platform: navigator.platform,
+                language: navigator.language,
+                cookiesEnabled: navigator.cookieEnabled,
+                screenWidth: window.screen.width,
+                screenHeight: window.screen.height,
+                windowWidth: window.innerWidth,
+                windowHeight: window.innerHeight,
+                timestamp: new Date().toISOString()
+            };
+            
+            localStorage.setItem('browserInfo', JSON.stringify(browserInfo));
+            displayBrowserInfo();
+        }
+        
+        // Display browser info in footer
+        function displayBrowserInfo() {
+            const browserInfoData = JSON.parse(localStorage.getItem('browserInfo'));
+            if (browserInfoData) {
+                const infoContainer = document.getElementById('browser-info');
+                infoContainer.innerHTML = `
+                    <details>
+                        <summary>Browser & System Info</summary>
+                        <p>User Agent: ${browserInfoData.userAgent}</p>
+                        <p>Platform: ${browserInfoData.platform}</p>
+                        <p>Language: ${browserInfoData.language}</p>
+                        <p>Screen: ${browserInfoData.screenWidth}x${browserInfoData.screenHeight}</p>
+                        <p>Window: ${browserInfoData.windowWidth}x${browserInfoData.windowHeight}</p>
+                        <p>Last Visit: ${new Date(browserInfoData.timestamp).toLocaleString()}</p>
+                    </details>
+                `;
+            }
+        }
+        
+        // 2. Fetch and display comments
+        async function fetchComments() {
+            try {
+                const response = await fetch('https://jsonplaceholder.typicode.com/posts/1/comments');
+                const comments = await response.json();
+                
+                const commentsContainer = document.getElementById('comments-container');
+                commentsContainer.innerHTML = '';
+                
+                if (comments.length === 0) {
+                    commentsContainer.innerHTML = '<p>No comments available.</p>';
+                    return;
+                }
+                
+                comments.forEach(comment => {
+                    const commentElement = document.createElement('div');
+                    commentElement.className = 'comment';
+                    commentElement.innerHTML = `
+                        <h3>${comment.name}</h3>
+                        <p class="email">${comment.email}</p>
+                        <p>${comment.body}</p>
+                    `;
+                    commentsContainer.appendChild(commentElement);
+                });
+            } catch (error) {
+                console.error('Error fetching comments:', error);
+                document.getElementById('comments-container').innerHTML = 
+                    '<p>Failed to load comments. Please try again later.</p>';
+            }
+        }
+        
+        // 3. Modal Contact Form
+        function setupContactModal() {
+            const modal = document.getElementById('contact-modal');
+            const closeBtn = document.getElementsByClassName('close')[0];
+            
+            // Show modal after 1 minute
+            setTimeout(() => {
+                modal.style.display = 'block';
+            }, 60000); // 60000 ms = 1 minute
+            
+            // Close modal when clicking X
+            closeBtn.onclick = function() {
+                modal.style.display = 'none';
+            }
+            
+            // Close modal when clicking outside
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        }
+        
+        // 4. Dark/Light Mode
+        function setupThemeToggle() {
+            const themeSwitch = document.getElementById('theme-switch');
+            const themeLabel = document.getElementById('theme-label');
+            
+            // Function to set theme
+            function setTheme(isDark) {
+                if (isDark) {
+                    document.body.classList.add('dark-theme');
+                    themeLabel.textContent = 'Dark Mode';
+                    themeSwitch.checked = true;
+                } else {
+                    document.body.classList.remove('dark-theme');
+                    themeLabel.textContent = 'Light Mode';
+                    themeSwitch.checked = false;
+                }
+                localStorage.setItem('darkMode', isDark);
+            }
+            
+            // Check user preference from localStorage
+            const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+            
+            // Check time of day (7:00-21:00 = light, otherwise dark)
+            const currentHour = new Date().getHours();
+            const isNightTime = currentHour < 7 || currentHour >= 21;
+            
+            // Set initial theme (user preference or time-based)
+            if (localStorage.getItem('darkMode') !== null) {
+                setTheme(savedDarkMode);
+            } else {
+                setTheme(isNightTime);
+            }
+            
+            // Theme toggle listener
+            themeSwitch.addEventListener('change', function() {
+                setTheme(this.checked);
+            });
+        }
+        
+        // Initialize all functions on page load
+        window.onload = function() {
+            storeBrowserInfo();
+            fetchComments();
+            setupContactModal();
+            setupThemeToggle();
+        };
+    </script>
+</body>
+</html>
+
+
+
